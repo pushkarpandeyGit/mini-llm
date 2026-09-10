@@ -13,6 +13,9 @@ An end-to-end, production-grade **Decoder-Only Transformer Language Model** engi
 <!-- PICTURE PLACEHOLDER 1: MAIN WEB APPLICATION DEMO -->
 ## Interactive Web Application
 ![MedMini-LLM Web Interface](docs/app_demo.png)
+
+<img width="1876" height="907" alt="image" src="https://github.com/user-attachments/assets/3873696d-c8ee-4900-847a-b7da6d5f9175" />
+
 > *Figure 1: MedMini-LLM interactive web interface with sampling temperature control and clinical query generation.*
 
 ---
@@ -116,6 +119,19 @@ npm run dev
 
 The model is deployed on **Hugging Face Spaces** utilizing ZeroGPU hardware acceleration:
 👉 **[Launch Live Demo](https://huggingface.co/spaces/pushy07/medmini-llm)**
+
+---
+
+---
+
+## Contact
+
+**Pushkar Kumar Pandey**  
+B.Tech Electronics & Communication Engineering  
+**VIT Chennai**
+
+- **LinkedIn:** https://www.linkedin.com/in/pushkar-kumar-pandey/
+- **Email:** pushkarpandey2162@gmail.com
 
 ---
 
