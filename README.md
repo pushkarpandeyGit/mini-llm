@@ -4,7 +4,7 @@ A complete, production-grade **Decoder-Only Transformer Language Model** built e
 
 ---
 
-## 🚀 Key Technical Highlights (2026 Resume Ready)
+##  Key Technical Highlights
 
 * **Architecture from Scratch:** Implemented multi-head causal self-attention, residual connections, and autoregressive generation without using pre-packaged Hugging Face model abstractions.
 * **Modern Normalization (RMSNorm):** Replaced conventional LayerNorm with Root Mean Square Normalization (used in LLaMA 3, Gemma, Mistral), reducing compute overhead by skipping mean centering.
@@ -16,7 +16,7 @@ A complete, production-grade **Decoder-Only Transformer Language Model** built e
 
 ---
 
-## 📊 Model Specifications
+##  Model Specifications
 
 | Parameter | Value |
 | :--- | :--- |
@@ -32,24 +32,23 @@ A complete, production-grade **Decoder-Only Transformer Language Model** built e
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 scratch_llm/
-├── day1_data.py          # Dataset loading, BPE tokenization (tiktoken), batch generation
-├── day2_model.py         # PyTorch Transformer architecture (RMSNorm, SwiGLU, MultiHeadAttention)
-├── day3_train.py         # AdamW training loop, loss tracking, and loss_curve.png generator
-├── generate.py           # CLI inference script for medical answering
-├── server.py             # FastAPI REST backend serving the PyTorch checkpoint
-├── med_model.pt          # Trained PyTorch model checkpoint
-├── metadata.json         # Vocabulary mapping and training metrics
-├── loss_curve.png        # Training vs Validation loss curve visualization
-├── medical_data.txt      # Domain-specific Medical Q&A corpus
-├── start_all.bat         # 1-Click launcher for both Backend & Frontend
-└── frontend/             # Clean React + Vite User Interface
+├── day1_data.py        
+├── day2_model.py         
+├── day3_train.py         
+├── generate.py        
+├── server.py             
+├── med_model.pt         
+├── metadata.json         
+├── loss_curve.png      
+├── medical_data.txt  
+└── frontend/            
     ├── src/
-    │   ├── App.jsx       # Interactive UI with temperature sliders & prompt chips
-    │   └── App.css       # Clean, modern styling
+    │   ├── App.jsx     
+    │   └── App.css      
     └── package.json
 ```
 
@@ -80,10 +79,3 @@ npm run dev
 
 ---
 
-## 📝 Resume Bullet Points (Copy & Paste)
-
-**MedMini-LLM: Domain-Specific Transformer from Scratch** | *PyTorch, Python, FastAPI, React.js*
-* Engineered and trained a 207K-parameter **decoder-only Transformer** from scratch in PyTorch, implementing modern LLM design patterns including **RMSNorm** and **SwiGLU gated activations** (LLaMA-3 standard).
-* Implemented scaled dot-product **causal self-attention** with upper-triangular masking to ensure strict autoregressive next-token prediction.
-* Pretrained the model on a structured Medical Q&A corpus, achieving cross-entropy loss convergence from **4.38 to 0.54** using the **AdamW optimizer**.
-* Developed a full-stack interactive interface featuring a **FastAPI inference backend** and a modern **React (Vite) frontend** supporting real-time temperature and token-length controls.
