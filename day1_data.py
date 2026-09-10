@@ -59,7 +59,7 @@ print(f"Validation set size: {len(val_data):,} tokens (10%)")
 # 5. Batch Generator
 torch.manual_seed(1337)
 batch_size = 4
-block_size = 32  # 32 characters of medical context
+block_size = 128  # 32 characters of medical context
 
 def get_batch(split='train'):
     dataset = train_data if split == 'train' else val_data
