@@ -2,7 +2,7 @@
 import tiktoken
 
 # =====================================================================
-# DAY 1 (UPGRADED): MEDICAL Q&A DATASET & TOKENIZATION
+# DATASET AND TOKENIZATION PIPELINE
 # =====================================================================
 
 # 1. Load the Medical Q&A text
@@ -76,4 +76,4 @@ print("-" * 65)
 print(f"Input Context x[0]:  '{decode(xb[0].tolist())}'")
 print(f"Target Label  y[0]:  '{decode(yb[0].tolist())}'")
 print("=" * 65)
-print("SUCCESS: Day 1 upgraded to Medical Q&A with BPE integration!")
+print("SUCCESS: DATASET AND TOKENIZATION PIPELINE

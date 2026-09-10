@@ -4,8 +4,8 @@ from torch.nn import functional as F
 import json
 import time
 import matplotlib.pyplot as plt
-from day2_model import MedMiniGPT, vocab_size, block_size, device
-from day1_data import train_data, val_data, encode, decode, chars
+from model import MedMiniGPT, vocab_size, block_size, device
+from dataset import train_data, val_data, encode, decode, chars
 
 print("=" * 65)
 print("TRAINING ENHANCED MedMiniGPT (Context Window = 128)")

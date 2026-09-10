@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
-from day2_model import MedMiniGPT, device, block_size
+from model import MedMiniGPT, device, block_size
 
 app = FastAPI(title="MedMini-LLM API")
 

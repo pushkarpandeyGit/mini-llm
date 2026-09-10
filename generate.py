@@ -2,7 +2,7 @@
 import torch.nn.functional as F
 import json
 import argparse
-from day2_model import MedMiniGPT, device, block_size
+from model import MedMiniGPT, device, block_size
 
 # Load vocabulary and metadata
 with open('metadata.json', 'r', encoding='utf-8') as f:

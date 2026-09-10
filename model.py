@@ -4,7 +4,7 @@ from torch.nn import functional as F
 import math
 
 # =====================================================================
-# DAY 2 (ENHANCED): MODERN LLaMA-STYLE ARCHITECTURE
+# TRANSFORMER NEURAL NETWORK ARCHITECTURE
 # Context Window (block_size) increased to 128 characters
 # =====================================================================
 

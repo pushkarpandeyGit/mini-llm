@@ -1,7 +1,7 @@
 ﻿import gradio as gr
 import torch
 import json
-from day2_model import MedMiniGPT, device
+from model import MedMiniGPT, device
 
 # Load vocabulary and metadata
 with open('metadata.json', 'r', encoding='utf-8') as f:
